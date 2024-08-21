@@ -1,8 +1,15 @@
-body {
-  background-color: tomato;
-  color: white;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #050a1a;
+    /* @apply bg-black; */
+    color: white;
+    font-family: "EsaManru";
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
